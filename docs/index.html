@@ -289,9 +289,9 @@ python -m unittest discover tests            # tests and validation checks</code
     saved preprocessing, encodes raw flow records exactly as during training (verified
     automatically) and prints the predicted class and its probability. The sample flows are
     from each dataset's test split, so the model never saw them. Output of the UNSW-NB15 demo:</p>
-  <pre><code>$ python predict.py --dataset unsw_nb15 --input demo\unsw_nb15_samples.csv
+  <pre><code>$ python predict.py --dataset unsw_nb15 --input demo/unsw_nb15_samples.csv
 Model: FT-Transformer, unsw_nb15 (multiclass, 10 classes), seed 42, decision: most probable class
-Classifying 200 flow(s) from demo\unsw_nb15_samples.csv
+Classifying 200 flow(s) from demo/unsw_nb15_samples.csv
 
        true_label  predicted  probability  correct
 0        Analysis   Analysis       0.8200     True
@@ -320,9 +320,9 @@ Reconnaissance       16     20    80%
 Shellcode            15     20    75%
 Worms                10     20    50%</code></pre>
   <details><summary>NSL-KDD and CIC-DDoS2019 demo output</summary>
-    <pre><code>$ python predict.py --dataset nsl_kdd --input demo\nsl_kdd_samples.csv
+    <pre><code>$ python predict.py --dataset nsl_kdd --input demo/nsl_kdd_samples.csv
 Model: FT-Transformer, nsl_kdd (binary, 2 classes), seed 42, decision: threshold 0.480 on P(attack)
-Classifying 40 flow(s) from demo\nsl_kdd_samples.csv
+Classifying 40 flow(s) from demo/nsl_kdd_samples.csv
 
   true_label predicted  probability  correct
 0     ATTACK    ATTACK       1.0000     True
@@ -342,9 +342,9 @@ Per true class:
 true_label                       
 ATTACK           20     20   100%
 NORMAL           19     20    95%</code></pre>
-    <pre><code>$ python predict.py --dataset cic_ddos2019 --input demo\cic_ddos2019_samples.csv
+    <pre><code>$ python predict.py --dataset cic_ddos2019 --input demo/cic_ddos2019_samples.csv
 Model: FT-Transformer, cic_ddos2019 (multiclass, 12 classes), seed 42, decision: most probable class
-Classifying 228 flow(s) from demo\cic_ddos2019_samples.csv
+Classifying 228 flow(s) from demo/cic_ddos2019_samples.csv
 
   true_label predicted  probability  correct
 0        DNS     MSSQL       0.8496    False

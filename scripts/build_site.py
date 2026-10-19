@@ -66,7 +66,7 @@ def comparison(dataset):
 
 
 def demo_output(dataset):
-    sample = os.path.join("demo", f"{dataset}_samples.csv")
+    sample = f"demo/{dataset}_samples.csv"  # forward slash: the page shows this path
     run = subprocess.run([sys.executable, "predict.py", "--dataset", dataset, "--input", sample,
                           "--show", "8"], cwd=ROOT, capture_output=True, text=True,
                          env={**os.environ, "PYTHONIOENCODING": "utf-8"})
