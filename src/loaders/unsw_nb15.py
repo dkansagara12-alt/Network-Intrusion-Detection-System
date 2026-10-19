@@ -14,9 +14,9 @@ come from NUSW-NB15_features.csv. This loader:
        multiclass - attack_cat: Normal + 9 attack categories, as in
                     IDS-MTran (the raw data spells Backdoor two ways)
        binary     - the 0/1 'label' column (0 = normal, 1 = attack)
-  3. Drops duplicate rows (after removing identifiers): ~520k rows are
-     duplicates, mostly repeated 'Generic' attack flows; attacks go from
-     321k to ~78k rows.
+  3. Drops duplicate rows (after removing identifiers): 512,757 rows in
+     the multi-class version (522,732 in binary), mostly repeated 'Generic'
+     attack flows; attack rows go from 321,283 to 88,424 (binary: 78,449).
   4. One-hot encodes proto, state and service.
 
 The pre-split UNSW_NB15_training-set.csv / testing-set.csv files are not

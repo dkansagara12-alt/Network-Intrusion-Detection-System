@@ -9,7 +9,7 @@ a class label + a difficulty score. This loader:
        - KDDTrain+_20Percent / KDDTest-21 are subsets of these two files
        - the .arff files are copies of the .txt files (with labels collapsed
          to normal/anomaly, so drop_duplicates() would not catch them)
-     Merging them put ~48% of test rows verbatim into the training set.
+     Merging them put 45% of test rows verbatim into the training set.
   2. Assigns the standard 41 NSL-KDD column names (no header row in the
      raw files) and drops the difficulty-level column (a KDD scoring
      artifact, not a traffic feature).
