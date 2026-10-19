@@ -1,0 +1,4 @@
+Dataset,Task,Rows (raw),Duplicates removed,Rows (clean),Numerical features,Categorical features,One-hot columns,Classes,Normal share,Rarest class,PCA comps for 90% / 95% var.
+NSL-KDD,binary,148517,629,147888,38,3,84,2,0.5204,"ATTACK (70,921)",75 / 83
+CIC-DDoS2019,multiclass,306201,1555,304646,77,0,0,12,0.1636,WebDDoS (51),18 / 23
+UNSW-NB15,multiclass,2540047,512757,2027290,38,3,164,10,0.9564,Worms (171),138 / 148

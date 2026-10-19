@@ -1,0 +1,18 @@
+# Datasets are large (~1 GB): see data/README.md for download links
+data/*
+!data/README.md
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Resume bookkeeping for interrupted runs (all_metrics.json holds the same results)
+outputs/*/seed_progress.json
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
