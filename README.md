@@ -13,10 +13,10 @@ Each dataset uses the same task as the paper:
 
 **Project webpage:** open [`docs/index.html`](docs/index.html) in a browser (works
 offline). With GitHub Pages enabled for the `docs/` folder it is also at
-<https://dkansagara12-alt.github.io/AI-ML/>. It covers the motivation,
+<https://dkansagara12-alt.github.io/Network-Intrusion-Detection-System/>. It covers the motivation,
 methodology, EDA, results, discussion and references.
 
-**Repository:** <https://github.com/dkansagara12-alt/AI-ML>
+**Repository:** <https://github.com/dkansagara12-alt/Network-Intrusion-Detection-System>
 
 ## Results
 
